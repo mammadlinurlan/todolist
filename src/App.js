@@ -13,6 +13,7 @@ export const App = () => {
 const [toDoList, setToDoList] = React.useState([]);
 const [input, setInput] = React.useState("");
 
+
 React.useEffect(()=>{
   checkLocalStorage();
 },[])
@@ -71,6 +72,8 @@ const checkLocalStorage = () => {
     <div className='container'>
       <div className="App">
         <form onSubmit={submitToDoHandler}>
+        <h1 style={{fontFamily:"cursive"}}>You have {toDoList.length} todos</h1>
+
           <div  className="input-group mb-3 myInput">
             <input  
               type="text"
