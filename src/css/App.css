@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.myInput{
+  margin-top: 50px;
 }
 
 .App-logo {
